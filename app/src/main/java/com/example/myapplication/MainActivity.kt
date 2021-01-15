@@ -27,12 +27,7 @@ class MainActivity : AppCompatActivity() {
             .setNetworkSpecifier(wifiSpecs)
             .build()
         val connectivityManager = getSystemService((Context.CONNECTIVITY_SERVICE)) as ConnectivityManager
-        val networkCallback = object: ConnectivityManager.NetworkCallback() {
-            override fun onAvailable(network: Network) {
-                super.onAvailable(network)
-                connectivityManager.bindProcessToNetwork(network)
-            }
-        }
+        val networkCallback = ConnectivityManager.NetworkCallback()
 
         connectivityManager.requestNetwork(networkRequest, networkCallback)
         Reply.text = "Connect Clicked"
