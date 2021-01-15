@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">NetworkConnectExample</string>
+    <string name="replyText">No Reply Yet</string>
+    <string name="connectButtonLabel">Connect</string>
+    <string name="connectClick">onConnectClick</string>
+</resources>
