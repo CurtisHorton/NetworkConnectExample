@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
     fun onConnectClick (view: View)
     {
         val wifiSpecs = WifiNetworkSpecifier.Builder()
-            .setSsid("RoboBar_v2")
-            .setWpa2Passphrase("")
+            .setSsid("SSID")
+            .setWpa2Passphrase("PASSWORD")
             .build()
         val networkRequest = NetworkRequest.Builder()
             .addTransportType(NetworkCapabilities.TRANSPORT_WIFI)
